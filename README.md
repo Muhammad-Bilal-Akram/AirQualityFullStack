@@ -35,7 +35,7 @@ Developed multiple endpoints for retrieving and posting PM2.5 data:
 ### Features Implemented
 1. **Heatmap with Time Range**: Implemented the ability to select a time range for the heatmap and included a feature for users to insert their coordinates to calculate current and average PM2.5 values for their area.
 2. **Search Bar**: Added a search bar for easier navigation and data retrieval.
-3. **Testing**: Testing was not implemented for both backend and frontend.
+3. **Testing**: Testing was implemented for both backend and frontend.
 
 ### Features Postponed or Planned
 1. **Machine Learning**: While not implemented, machine learning is a future enhancement, using a combination of several gases for PM2.5 prediction.
