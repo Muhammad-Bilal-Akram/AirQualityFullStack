@@ -30,7 +30,7 @@ def get_pm25_averages():
     if os.path.exists(cache_file):
         with open(cache_file, "r") as f:
             return json.load(f)
-    return {"error": "Cache not found, recomputing..."}
+    return {"message": "Precomputing PM2.5 averages, try again later."}
 
 
 def get_pm25_map():
@@ -43,7 +43,7 @@ def get_pm25_map():
     if os.path.exists(cache_file):
         with open(cache_file, "r") as f:
             return json.load(f)
-    return {"error": "Cache not found, recomputing..."}
+    return {"message": "Precomputing PM2.5 Map, try again later."}
 
 
 def post_air_quality_indicator(request):

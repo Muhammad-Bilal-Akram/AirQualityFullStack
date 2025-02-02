@@ -35,12 +35,10 @@ Developed multiple endpoints for retrieving and posting PM2.5 data:
 ### Features Implemented
 1. **Heatmap with Time Range**: Implemented the ability to select a time range for the heatmap and included a feature for users to insert their coordinates to calculate current and average PM2.5 values for their area.
 2. **Search Bar**: Added a search bar for easier navigation and data retrieval.
+3. **Testing**: Testing was not implemented for both backend and frontend.
 
 ### Features Postponed or Planned
 1. **Machine Learning**: While not implemented, machine learning is a future enhancement, using a combination of several gases for PM2.5 prediction.
-
-### Not Done (Planned But Not Implemented)
-1. **Testing**: Testing was not implemented due to time constraints. This would require significant time to develop tests for each part of the codebase.
 
 ## Tools and Approach
 
@@ -48,6 +46,7 @@ Developed multiple endpoints for retrieving and posting PM2.5 data:
 - **Frontend**: React.js with Material UI was used for building the interactive UI.
 - **Data Downloading**: Google Earth Engine combined with the Geemap library was used to download the necessary environmental data.
 - **Data Processing**: Utilized geospatial libraries like `rasterio`, `shapely`, `geopandas`, etc., for data processing and analysis.
+- **Testing**: Pytest for backend, jest for frontend.
 
 ## Challenges Faced
 

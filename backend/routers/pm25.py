@@ -45,7 +45,7 @@ async def pm25_map():
             return json.load(f)
 
     precompute_metrics()
-    return {"message": "Precomputing PM2.5 map, try again later."}
+    return {"message": "Precomputing PM2.5 Map, try again later."}
 
 
 @router.post("/recompute")

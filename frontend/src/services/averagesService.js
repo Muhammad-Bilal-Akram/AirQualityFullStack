@@ -9,7 +9,7 @@ export const getPM25Averages = async () => {
         const response = await api.get('/pm25/averages');
         return response.data;
     } catch (error) {
-        throw new Error(error.response?.data?.detail || 'Failed to fetch PM2.5 averages');
+        throw new Error(error.response?.data?.detail || 'Computing, try again later.');
     }
 };
 

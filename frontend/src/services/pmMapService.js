@@ -10,7 +10,7 @@ export const getPM25Map = async () => {
     const response = await api.get('/pm25/map-data');
     return response.data;
   } catch (error) {
-    throw new Error(error.response?.data?.detail || 'Failed to fetch Map of PM2.5 averages');
+    throw new Error(error.response?.data?.detail || 'Computing, try again later.');
   }
 };
 

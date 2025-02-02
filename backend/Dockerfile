@@ -16,7 +16,7 @@ RUN python3 -m venv /app/venv
 RUN /app/venv/bin/python3 -m pip install --upgrade pip
 RUN /app/venv/bin/pip install --no-cache-dir -r requirements.txt --timeout 120
 
-COPY google_credentials/credentials /root/.config/earthengine/credentials
+COPY sentinel5plib/google_credentials/credentials /root/.config/earthengine/credentials
 RUN chmod 600 /root/.config/earthengine/credentials
 
 COPY . /app/

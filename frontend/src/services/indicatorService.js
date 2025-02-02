@@ -9,7 +9,7 @@ export const getCurrentAirQualityPM25Indicator = async () => {
         const response = await api.get('/pm25/indicator');
         return response.data;
     } catch (error) {
-        throw new Error(error.response?.data?.detail || 'Failed to fetch air quality pm25 indicator data.')
+        throw new Error(error.response?.data?.detail || 'Computing, try again later.')
     }
 };
 
