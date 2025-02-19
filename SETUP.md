@@ -5,11 +5,13 @@ Before setting up the project, make sure you have the following installed on you
 
 - **Python** (for FastAPI backend)
 - **Node.js** and **npm** (for React.js frontend)
+- **credentials** (put your 'credentials' file in google_credentials folder.)
+- **REACT_APP_MAPBOX_ACCESS_TOKEN** (create .env frontend file and add your MapBox Token.)
 
 ## 1. Clone the Repository
 First, clone the repository to your local machine:
 ```sh
-git clone https://github.com/Muhammad-Bilal-Akram/kuyua_fullstack_challenge.git
+git clone https://github.com/Muhammad-Bilal-Akram/AirQualityFullStack.git
 ```
 
 ## 2. Backend Setup (FastAPI)
@@ -77,7 +79,7 @@ Make sure you have **Docker** and **Docker Compose** installed:
 #### **Steps to Run Using Docker Compose**
 1. Navigate to the project root directory:
 ```sh
-cd kuyua_fullstack_challenge
+cd AirQualityFullStack
 ```
 
 2. Build and start the containers:

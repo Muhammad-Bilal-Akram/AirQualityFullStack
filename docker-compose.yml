@@ -6,9 +6,7 @@ services:
       context: ./backend 
     container_name: fastapi-backend
     ports:
-      - "8000:8000" 
-    depends_on:
-      - frontend 
+      - "8000:8000"  
 
   frontend:
     build:
@@ -16,5 +14,7 @@ services:
     container_name: react-frontend
     ports:
       - "3000:3000"
+    depends_on:
+      - backend
     environment:
       - REACT_APP_API_URL=http://backend:8000 
